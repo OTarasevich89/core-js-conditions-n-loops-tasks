@@ -21,15 +21,16 @@
  *  0  => true
  *  -5 => false
  */
-function isPositive(/* number */) {
-  throw new Error('Not implemented');
+function isPositive(number) {
+  return number >= 0;
 }
 
 /**
  * Returns the maximum of three numbers without using Array and Math classes methods.
  *
  * @param {number} a - The first number.
- * @param {number} b - The second number.
+ * @param {number} b - The seco
+ * nd number.
  * @param {number} c - The third number.
  * @return {number} The maximum of the three numbers.
  *
@@ -38,8 +39,15 @@ function isPositive(/* number */) {
  *  -5, 0, 5      => 5
  *  -0.1, 0, 0.2  => 0.2
  */
-function getMaxNumber(/* a, b, c */) {
-  throw new Error('Not implemented');
+function getMaxNumber(a, b, c) {
+  let maxA = a;
+  if (maxA < b) {
+    maxA = b;
+  }
+  if (maxA < c) {
+    maxA = c;
+  }
+  return maxA;
 }
 
 /**
